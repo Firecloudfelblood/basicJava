@@ -5,6 +5,14 @@ public class Valores {
     protected int numero2 =0;
     protected int resultado =0;
 
+    public Valores(){
+    }
+    public Valores(int numero1, int numero2, int resultado){
+        this.numero1 = numero1;
+        this.numero2 = numero2;
+        this.resultado = resultado;
+    }
+
     public int getNumero1() {
         return numero1;
     }
@@ -27,6 +35,11 @@ public class Valores {
 
     public void setResultado(int resultado) {
         this.resultado = resultado;
+    }
+
+    @Override
+    public String toString(){
+        return "Numero 1 = " + numero1 + " Numero 2 = " + numero2 + " Resultado = " + resultado;
     }
 
 }
